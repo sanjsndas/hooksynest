@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - HooksyNest</title>
+    <style>
+        /* Reusing the same styles as index.html for consistency */
+        :root {
+            --soft-yarn-pink: #F48FB1;
+            --cozy-cream: #FFF3E0;
+            --wool-gray: #B0BEC5;
+            --leaf-green: #81C784;
+            --warm-amber: #FFB74D;
+            --text-dark: #333;
+            --text-light: #666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--cozy-cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--soft-yarn-pink);
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--soft-yarn-pink);
+        }
+        
+        /* Main Content */
+        .terms-container {
+            background-color: white;
+            padding: 60px 0;
+        }
+        
+        .terms-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--soft-yarn-pink);
+            font-size: 36px;
+        }
+        
+        h2 {
+            margin: 30px 0 15px;
+            color: var(--soft-yarn-pink);
+            font-size: 28px;
+        }
+        
+        h3 {
+            margin: 25px 0 10px;
+            color: var(--warm-amber);
+            font-size: 22px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+        
+        .last-updated {
+            text-align: center;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--soft-yarn-pink);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: var(--wool-gray);
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: var(--wool-gray);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--soft-yarn-pink);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: var(--wool-gray);
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">HooksyNest</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Terms of Service Content -->
+    <section class="terms-container">
+        <div class="container terms-content">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: January 01, 2023</p>
+            
+            <p>Welcome to HooksyNest! These Terms of Service ("Terms") govern your access to and use of the HooksyNest website, services, and applications (collectively, the "Service"). Please read these Terms carefully before using the Service.</p>
+            
+            <p>By accessing or using the Service, you agree to be bound by these Terms and our Privacy Policy. If you disagree with any part of the terms, you may not access the Service.</p>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>These Terms constitute a legally binding agreement between you ("User" or "you") and HooksyNest LLC ("HooksyNest," "we," "us," or "our"). By accessing or using any part of the Service, you agree to be bound by these Terms. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services.</p>
+            
+            <h3>1.1 Modifications to Terms</h3>
+            <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+            
+            <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you must stop using the Service.</p>
+            
+            <h2>2. Description of Service</h2>
+            <p>HooksyNest provides an online platform that offers:</p>
+            <ul>
+                <li>Crochet and knitting patterns for purchase or free download</li>
+                <li>Instructional videos and tutorials</li>
+                <li>An online store selling yarn, needles, hooks, and other crafting supplies</li>
+                <li>A community forum for crafters to connect and share projects</li>
+                <li>Subscription services including monthly yarn boxes</li>
+                <li>Digital and in-person workshops and classes</li>
+            </ul>
+            
+            <h3>2.1 Service Limitations</h3>
+            <p>The Service is provided "as is" and we make no warranties regarding its uninterrupted or error-free operation. We reserve the right to modify, suspend, or discontinue the Service (or any part thereof) at any time with or without notice.</p>
+            
+            <h2>3. User Accounts</h2>
+            <h3>3.1 Account Creation</h3>
+            <p>To access certain features of the Service, you may be required to create an account. When creating an account, you agree to:</p>
+            <ul>
+                <li>Provide accurate, current, and complete information</li>
+                <li>Maintain and promptly update your account information</li>
+                <li>Maintain the security of your password and accept all risks of unauthorized access</li>
+                <li>Notify us immediately if you discover or suspect any security breaches related to the Service</li>
+                <li>Take responsibility for all activities that occur under your account</li>
+            </ul>
+            
+            <h3>3.2 Account Termination</h3>
+            <p>We may, in our sole discretion, suspend or terminate your account and refuse any current or future use of the Service for any reason at any time, including if:</p>
+            <ul>
+                <li>You violate these Terms or any other policy</li>
+                <li>We suspect fraudulent, abusive, or illegal activity</li>
+                <li>Providing the Service to you could create risk or legal exposure for us</li>
+            </ul>
+            
+            <p>You may terminate your account at any time by contacting customer service. Upon termination, your right to use the Service will immediately cease.</p>
+            
+            <h2>4. Purchases and Payments</h2>
+            <h3>4.1 Product Purchases</h3>
+            <p>All purchases through our Service are subject to product availability. We reserve the right to limit quantities, discontinue products, or change product descriptions at any time without notice.</p>
+            
+            <p>Prices for our products are subject to change without notice. We shall not be liable to you or any third-party for any price change, suspension, or discontinuance of the Service.</p>
+            
+            <h3>4.2 Payment Methods</h3>
+            <p>We accept various payment methods including major credit cards, PayPal, and other payment options as indicated at checkout. You represent and warrant that you have the legal right to use any payment method you provide.</p>
+            
+            <h3>4.3 Taxes</h3>
+            <p>You are responsible for any applicable sales, use, duty, customs, or other transactional taxes associated with your purchase. Where required, we will collect and remit taxes to the appropriate taxing authority.</p>
+            
+            <h3>4.4 Shipping and Delivery</h3>
+            <p>Shipping times and costs will be displayed at checkout. We are not responsible for delays caused by shipping carriers or customs clearance procedures. Risk of loss passes to you upon delivery to the carrier.</p>
+            
+            <h3>4.5 Returns and Refunds</h3>
+            <p>Our return policy is as follows:</p>
+            <ul>
+                <li>Physical products may be returned within 30 days of delivery for a refund or exchange</li>
+                <li>Digital products (patterns, tutorials) are non-refundable</li>
+                <li>Custom or personalized items cannot be returned</li>
+                <li>Yarn subscriptions may be canceled at any time with no refund for boxes already shipped</li>
+                <li>Original shipping costs are non-refundable</li>
+            </ul>
+            
+            <h2>5. Digital Products and Licensing</h2>
+            <h3>5.1 Pattern Licensing</h3>
+            <p>All crochet and knitting patterns available through the Service are protected by copyright law. When you purchase a pattern, you are purchasing a limited, non-exclusive, non-transferable license to:</p>
+            <ul>
+                <li>Use the pattern for personal, non-commercial purposes</li>
+                <li>Make items from the pattern for personal use or as gifts</li>
+                <li>Print or store one copy for your personal use</li>
+            </ul>
+            
+            <p>The license does <strong>not</strong> permit you to:</p>
+            <ul>
+                <li>Sell items made from the pattern without obtaining a commercial license</li>
+                <li>Share, distribute, or reproduce the pattern in any form</li>
+                <li>Teach classes using the pattern without permission</li>
+                <li>Modify the pattern and claim it as your own</li>
+            </ul>
+            
+            <h3>5.2 Video Tutorials</h3>
+            <p>Video tutorials are for personal, non-commercial use only. You may not:</p>
+            <ul>
+                <li>Download, copy, or redistribute the videos</li>
+                <li>Use the videos for commercial purposes</li>
+                <li>Edit, modify, or create derivative works from the videos</li>
+                <li>Remove any copyright notices or watermarks</li>
+            </ul>
+            
+            <h3>5.3 Commercial Licensing</h3>
+            <p>If you wish to sell items made from our patterns, you must purchase a commercial license. Commercial licenses are available for individual patterns or as part of our Maker Membership program. Contact us at licensing@hooksynest.com for details.</p>
+            
+            <h2>6. User Content</h2>
+            <h3>6.1 User Submissions</h3>
+            <p>The Service may allow you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material ("User Content"). You retain all rights to your User Content.</p>
+            
+            <p>By posting User Content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, distribute, and display such content in connection with operating and improving the Service.</p>
+            
+            <h3>6.2 Content Standards</h3>
+            <p>You agree not to post User Content that:</p>
+            <ul>
+                <li>Is unlawful, threatening, abusive, harassing, defamatory, or invasive of privacy</li>
+                <li>Contains nudity, violence, or offensive subject matter</li>
+                <li>Infringes any intellectual property right of any party</li>
+                <li>Contains software viruses or any other harmful code</li>
+                <li>Constitutes unsolicited or unauthorized advertising</li>
+            </ul>
+            
+            <h3>6.3 Content Moderation</h3>
+            <p>We reserve the right to monitor, edit, or remove any User Content at our sole discretion. We may also terminate or suspend your account for posting inappropriate content.</p>
+            
+            <h2>7. Intellectual Property</h2>
+            <p>The Service and its original content, features, and functionality are and will remain the exclusive property of HooksyNest and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries.</p>
+            
+            <p>Our trademarks and trade dress may not be used in connection with any product or service without our prior written consent.</p>
+            
+            <h3>7.1 Copyright Complaints</h3>
+            <p>We respect the intellectual property rights of others. If you believe your work has been copied in a way that constitutes copyright infringement, please contact us at legal@hooksynest.com with the following information:</p>
+            <ul>
+                <li>A description of the copyrighted work you claim has been infringed</li>
+                <li>The location of the allegedly infringing material on our Service</li>
+                <li>Your contact information</li>
+                <li>A statement that you have a good faith belief the use is not authorized</li>
+                <li>A statement, under penalty of perjury, that the information is accurate and you are the copyright owner</li>
+            </ul>
+            
+            <h2>8. Prohibited Uses</h2>
+            <p>You agree not to use the Service:</p>
+            <ul>
+                <li>For any unlawful purpose or to promote illegal activities</li>
+                <li>To harass, abuse, or harm others</li>
+                <li>To impersonate any person or entity</li>
+                <li>To interfere with or disrupt the Service or servers</li>
+                <li>To upload or transmit viruses or other harmful code</li>
+                <li>To collect or track personal information of others</li>
+                <li>For any obscene or immoral purpose</li>
+                <li>To compete with our business</li>
+            </ul>
+            
+            <h2>9. Third-Party Links</h2>
+            <p>The Service may contain links to third-party websites or services that are not owned or controlled by HooksyNest. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</p>
+            
+            <p>You acknowledge and agree that HooksyNest shall not be responsible or liable, directly or indirectly, for any damage or loss caused by or in connection with use of any such content, goods, or services available through any third-party websites or services.</p>
+            
+            <h2>10. Disclaimer of Warranties</h2>
+            <p>YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK. THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. HOOKSYNEST EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+            
+            <p>HOOKSYNEST MAKES NO WARRANTY THAT:</p>
+            <ul>
+                <li>THE SERVICE WILL MEET YOUR REQUIREMENTS</li>
+                <li>THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE</li>
+                <li>THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SERVICE WILL BE ACCURATE OR RELIABLE</li>
+                <li>THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE SERVICE WILL MEET YOUR EXPECTATIONS</li>
+                <li>ANY ERRORS IN THE SERVICE WILL BE CORRECTED</li>
+            </ul>
+            
+            <h2>11. Limitation of Liability</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL HOOKSYNEST, ITS DIRECTORS, EMPLOYEES, PARTNERS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
+            <ul>
+                <li>YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE</li>
+                <li>ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICE</li>
+                <li>ANY CONTENT OBTAINED FROM THE SERVICE</li>
+                <li>UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT</li>
+                <li>PRODUCTS OR SERVICES PURCHASED THROUGH THE SERVICE</li>
+            </ul>
+            
+            <p>IN NO EVENT SHALL HOOKSYNEST'S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION EXCEED THE AMOUNT YOU HAVE PAID HOOKSYNEST IN THE LAST SIX (6) MONTHS, OR, IF GREATER, ONE HUNDRED DOLLARS ($100).</p>
+            
+            <h2>12. Indemnification</h2>
+            <p>You agree to defend, indemnify, and hold harmless HooksyNest and its licensee and licensors, and their employees, contractors, agents, officers, and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of:</p>
+            <ul>
+                <li>Your use of and access to the Service</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any third-party right, including without limitation any copyright, property, or privacy right</li>
+                <li>Any claim that your User Content caused damage to a third party</li>
+            </ul>
+            
+            <h2>13. Governing Law</h2>
+            <p>These Terms shall be governed and construed in accordance with the laws of California, United States, without regard to its conflict of law provisions.</p>
+            
+            <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.</p>
+            
+            <h2>14. Dispute Resolution</h2>
+            <h3>14.1 Informal Resolution</h3>
+            <p>Before filing a claim against HooksyNest, you agree to try to resolve the dispute informally by contacting legal@hooksynest.com. We'll try to resolve the dispute informally by contacting you via email.</p>
+            
+            <h3>14.2 Binding Arbitration</h3>
+            <p>If we can't resolve the dispute informally, any disputes arising out of or relating to these Terms or the Service shall be resolved by binding arbitration in San Francisco, California, under the rules of the American Arbitration Association.</p>
+            
+            <h3>14.3 No Class Actions</h3>
+            <p>You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.</p>
+            
+            <h2>15. Miscellaneous</h2>
+            <h3>15.1 Entire Agreement</h3>
+            <p>These Terms constitute the entire agreement between us regarding our Service and supersede any prior agreements.</p>
+            
+            <h3>15.2 Severability</h3>
+            <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect.</p>
+            
+            <h3>15.3 Waiver</h3>
+            <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+            
+            <h3>15.4 Assignment</h3>
+            <p>You may not assign or transfer these Terms without our prior written consent. We may assign these Terms without restriction.</p>
+            
+            <h3>15.5 Force Majeure</h3>
+            <p>We shall not be liable for any failure to perform our obligations hereunder where such failure results from any cause beyond our reasonable control.</p>
+            
+            <h3>15.6 Contact Information</h3>
+            <p>If you have any questions about these Terms, please contact us at:</p>
+            <p>HooksyNest LLC<br>
+            123 Crafters Lane<br>
+            Yarnville, CA 90210<br>
+            United States<br>
+            Email: legal@hooksynest.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Yarn</a></li>
+                        <li><a href="#">Hooks & Needles</a></li>
+                        <li><a href="#">Kits</a></li>
+                        <li><a href="#">Patterns</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Beginner Guides</a></li>
+                        <li><a href="#">Stitch Dictionary</a></li>
+                        <li><a href="#">Skill Building</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Project Gallery</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Stitch-Alongs</a></li>
+                        <li><a href="#">Challenges</a></li>
+                        <li><a href="#">Meetups</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Designers</a></li>
+                        <li><a href="#">Teachers</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p>HooksyNest LLC</p>
+                        <p>123 Crafters Lane</p>
+                        <p>Yarnville, CA 90210</p>
+                        <p>United States</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Email: hello@hooksynest.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-ravelry"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HooksyNest. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

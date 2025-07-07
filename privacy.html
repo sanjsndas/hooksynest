@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - HooksyNest</title>
+    <style>
+        /* Reusing the same styles as index.html for consistency */
+        :root {
+            --soft-yarn-pink: #F48FB1;
+            --cozy-cream: #FFF3E0;
+            --wool-gray: #B0BEC5;
+            --leaf-green: #81C784;
+            --warm-amber: #FFB74D;
+            --text-dark: #333;
+            --text-light: #666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--cozy-cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--soft-yarn-pink);
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--soft-yarn-pink);
+        }
+        
+        /* Main Content Styles */
+        .privacy-content {
+            background-color: white;
+            padding: 60px 0;
+        }
+        
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: var(--soft-yarn-pink);
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: var(--soft-yarn-pink);
+            font-size: 28px;
+            margin: 40px 0 20px;
+        }
+        
+        h3 {
+            color: var(--text-dark);
+            font-size: 22px;
+            margin: 30px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+        
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 40px;
+            color: var(--wool-gray);
+        }
+        
+        .contact-info {
+            background-color: var(--cozy-cream);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--soft-yarn-pink);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: var(--wool-gray);
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: var(--wool-gray);
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">HooksyNest</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Content -->
+    <section class="privacy-content">
+        <div class="container privacy-container">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: January 01, 2023</p>
+            
+            <p>At HooksyNest, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://www.hooksynest.com">https://www.hooksynest.com</a> (the "Site") or use our services.</p>
+            
+            <p>Please read this privacy policy carefully. By accessing or using our Site, you agree to the terms of this Privacy Policy. If you do not agree with our policies and practices, please do not use our Site.</p>
+            
+            <h2>1. Information We Collect</h2>
+            
+            <p>We collect several types of information from and about users of our Site, including:</p>
+            
+            <h3>1.1 Personal Information</h3>
+            <p>Personal information is data that can be used to identify or contact a single person. We may collect the following personal information:</p>
+            <ul>
+                <li><strong>Contact Information:</strong> Name, email address, phone number, shipping and billing addresses</li>
+                <li><strong>Account Information:</strong> Username, password, profile picture, account preferences</li>
+                <li><strong>Payment Information:</strong> Credit card details, PayPal information, billing history (note: we do not store full credit card numbers)</li>
+                <li><strong>Demographic Information:</strong> Age, gender, location, language preferences</li>
+                <li><strong>Communication Data:</strong> Messages sent through our contact forms, customer support inquiries, survey responses</li>
+                <li><strong>Social Media Information:</strong> When you connect with us through social media platforms</li>
+            </ul>
+            
+            <h3>1.2 Non-Personal Information</h3>
+            <p>We also collect non-personal information that does not directly identify you. This may include:</p>
+            <ul>
+                <li><strong>Usage Data:</strong> Information about how you interact with our Site (pages visited, time spent, links clicked)</li>
+                <li><strong>Technical Data:</strong> IP address, browser type and version, operating system, device information</li>
+                <li><strong>Cookies and Tracking Data:</strong> Information collected through cookies, pixel tags, and similar technologies</li>
+                <li><strong>Aggregated Data:</strong> Statistical or demographic data for analysis purposes</li>
+            </ul>
+            
+            <h3>1.3 Special Categories of Data</h3>
+            <p>We do not intentionally collect sensitive personal information such as:</p>
+            <ul>
+                <li>Racial or ethnic origin</li>
+                <li>Political opinions</li>
+                <li>Religious or philosophical beliefs</li>
+                <li>Trade union membership</li>
+                <li>Genetic or biometric data</li>
+                <li>Health information</li>
+                <li>Sex life or sexual orientation</li>
+            </ul>
+            
+            <h2>2. How We Collect Information</h2>
+            
+            <p>We use different methods to collect data from and about you, including:</p>
+            
+            <h3>2.1 Direct Interactions</h3>
+            <p>You may provide us with your personal information when you:</p>
+            <ul>
+                <li>Create an account on our Site</li>
+                <li>Make a purchase from our online store</li>
+                <li>Subscribe to our newsletter or marketing communications</li>
+                <li>Participate in surveys, contests, or promotions</li>
+                <li>Request customer support or contact us</li>
+                <li>Post content in our community forums</li>
+                <li>Register for workshops or events</li>
+            </ul>
+            
+            <h3>2.2 Automated Technologies</h3>
+            <p>As you interact with our Site, we may automatically collect technical data about your equipment, browsing actions, and patterns. We collect this data through:</p>
+            <ul>
+                <li><strong>Cookies:</strong> Small data files stored on your device</li>
+                <li><strong>Log Files:</strong> Track actions occurring on the Site</li>
+                <li><strong>Web Beacons:</strong> Electronic files used to track browsing activity</li>
+                <li><strong>Analytics Tools:</strong> Such as Google Analytics</li>
+            </ul>
+            
+            <h3>2.3 Third Parties</h3>
+            <p>We may receive personal data about you from various third parties, including:</p>
+            <ul>
+                <li>Technical data from analytics providers like Google</li>
+                <li>Advertising networks and social media platforms</li>
+                <li>Payment processors and fraud detection services</li>
+                <li>Publicly available sources and data enrichment services</li>
+            </ul>
+            
+            <h2>3. How We Use Your Information</h2>
+            
+            <p>We use the information we collect for various purposes, including:</p>
+            
+            <h3>3.1 To Provide Our Services</h3>
+            <ul>
+                <li>Process and fulfill your orders</li>
+                <li>Create and manage your account</li>
+                <li>Provide customer support</li>
+                <li>Send service-related communications (order confirmations, shipping notifications)</li>
+                <li>Enable community features and interactions</li>
+            </ul>
+            
+            <h3>3.2 For Business Operations</h3>
+            <ul>
+                <li>Improve our products, services, and Site functionality</li>
+                <li>Conduct business analysis and research</li>
+                <li>Prevent fraud and enhance security</li>
+                <li>Comply with legal obligations</li>
+                <li>Enforce our terms and policies</li>
+            </ul>
+            
+            <h3>3.3 For Marketing and Communications</h3>
+            <ul>
+                <li>Send promotional emails (with your consent)</li>
+                <li>Personalize your experience on our Site</li>
+                <li>Show relevant advertisements</li>
+                <li>Measure and analyze marketing effectiveness</li>
+                <li>Notify you about special offers and new products</li>
+            </ul>
+            
+            <h3>3.4 Legal Basis for Processing (GDPR)</h3>
+            <p>For users in the European Economic Area (EEA), we process personal data under the following legal bases:</p>
+            <ul>
+                <li><strong>Contractual Necessity:</strong> When processing is necessary to fulfill our contractual obligations to you</li>
+                <li><strong>Legitimate Interests:</strong> When processing is necessary for our legitimate business interests</li>
+                <li><strong>Consent:</strong> When you have given clear consent for specific purposes</li>
+                <li><strong>Legal Compliance:</strong> When processing is necessary to comply with legal obligations</li>
+            </ul>
+            
+            <h2>4. How We Share Your Information</h2>
+            
+            <p>We may share your personal information in the following situations:</p>
+            
+            <h3>4.1 Service Providers</h3>
+            <p>We may employ third-party companies and individuals to facilitate our services ("Service Providers"), including:</p>
+            <ul>
+                <li>Payment processors (Stripe, PayPal)</li>
+                <li>Shipping and fulfillment partners</li>
+                <li>Cloud hosting providers</li>
+                <li>Marketing and analytics providers</li>
+                <li>Customer support platforms</li>
+            </ul>
+            <p>These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+            
+            <h3>4.2 Business Transfers</h3>
+            <p>If HooksyNest is involved in a merger, acquisition, or asset sale, your personal data may be transferred. We will provide notice before your personal data is transferred and becomes subject to a different privacy policy.</p>
+            
+            <h3>4.3 Legal Requirements</h3>
+            <p>We may disclose your personal information when required by law or in response to valid requests by public authorities (e.g., court orders, subpoenas).</p>
+            
+            <h3>4.4 With Your Consent</h3>
+            <p>We may share your information with third parties when we have your explicit consent to do so.</p>
+            
+            <h3>4.5 Aggregated or Anonymized Data</h3>
+            <p>We may share aggregated or anonymized information that does not directly identify you with partners for research, analytics, or marketing purposes.</p>
+            
+            <h2>5. Data Security</h2>
+            
+            <p>We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction, including:</p>
+            
+            <ul>
+                <li>Encryption of sensitive data in transit and at rest</li>
+                <li>Regular security assessments and vulnerability testing</li>
+                <li>Access controls and authentication procedures</li>
+                <li>Secure software development practices</li>
+                <li>Employee training on data protection</li>
+            </ul>
+            
+            <p>Despite our safeguards, no internet transmission or electronic storage is completely secure. We cannot guarantee absolute security but will notify you and applicable authorities of any data breaches as required by law.</p>
+            
+            <h2>6. Data Retention</h2>
+            
+            <p>We retain personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including:</p>
+            
+            <ul>
+                <li>To maintain business records for legal, tax, or accounting requirements</li>
+                <li>To resolve disputes and enforce our agreements</li>
+                <li>To continue providing services you've requested</li>
+            </ul>
+            
+            <p>When determining retention periods, we consider:</p>
+            <ul>
+                <li>The amount, nature, and sensitivity of the data</li>
+                <li>The potential risk of harm from unauthorized use or disclosure</li>
+                <li>The purposes for processing and whether we can achieve them by other means</li>
+                <li>Applicable legal requirements</li>
+            </ul>
+            
+            <p>After the retention period expires, we will securely delete or anonymize your personal data.</p>
+            
+            <h2>7. Your Data Protection Rights</h2>
+            
+            <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+            
+            <h3>7.1 General Rights</h3>
+            <ul>
+                <li><strong>Access:</strong> Request copies of your personal data</li>
+                <li><strong>Rectification:</strong> Request correction of inaccurate or incomplete data</li>
+                <li><strong>Erasure:</strong> Request deletion of your personal data under certain conditions</li>
+                <li><strong>Restriction:</strong> Request restriction of processing your personal data</li>
+                <li><strong>Objection:</strong> Object to our processing of your personal data</li>
+                <li><strong>Portability:</strong> Request transfer of your data to another organization</li>
+                <li><strong>Withdraw Consent:</strong> Withdraw consent where we rely on consent for processing</li>
+            </ul>
+            
+            <h3>7.2 Regional Rights</h3>
+            <p><strong>For California Residents (CCPA):</strong> You have the right to know what personal information is collected, used, shared or sold, and the right to access, delete, and opt-out of the sale of personal information.</p>
+            
+            <p><strong>For EU/UK Residents (GDPR):</strong> You have the rights listed above and the right to lodge a complaint with a supervisory authority.</p>
+            
+            <p>To exercise any of these rights, please contact us using the information in the "Contact Us" section below. We may need to verify your identity before processing your request.</p>
+            
+            <h2>8. Cookies and Tracking Technologies</h2>
+            
+            <p>We use cookies and similar tracking technologies to track activity on our Site and hold certain information. Cookies are files with small amounts of data which may include an anonymous unique identifier.</p>
+            
+            <h3>8.1 Types of Cookies We Use</h3>
+            <ul>
+                <li><strong>Essential Cookies:</strong> Necessary for the Site to function (e.g., shopping cart)</li>
+                <li><strong>Performance Cookies:</strong> Help us understand how visitors interact with our Site</li>
+                <li><strong>Functionality Cookies:</strong> Remember your preferences and settings</li>
+                <li><strong>Targeting Cookies:</strong> Used to deliver relevant ads and measure ad performance</li>
+            </ul>
+            
+            <h3>8.2 Managing Cookies</h3>
+            <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, some parts of our Site may not function properly.</p>
+            
+            <p>For more information about our use of cookies, please see our separate <a href="cookies.html">Cookie Policy</a>.</p>
+            
+            <h2>9. Third-Party Links</h2>
+            
+            <p>Our Site may contain links to other websites not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.</p>
+            
+            <p>We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+            
+            <h2>10. Children's Privacy</h2>
+            
+            <p>Our Site is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal data, please contact us.</p>
+            
+            <p>If we learn we have collected personal data from a child under 13 without verification of parental consent, we will take steps to remove that information from our servers.</p>
+            
+            <h2>11. International Data Transfers</h2>
+            
+            <p>Your information, including personal data, may be transferred to — and maintained on — computers located outside of your state, province, country, or other governmental jurisdiction where data protection laws may differ from those in your jurisdiction.</p>
+            
+            <p>If you are located outside the United States and choose to provide information to us, please note that we transfer the data, including personal data, to the United States and process it there.</p>
+            
+            <p>For transfers of personal data from the European Union to the United States, we implement appropriate safeguards such as Standard Contractual Clauses approved by the European Commission.</p>
+            
+            <h2>12. Changes to This Privacy Policy</h2>
+            
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+            
+            <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            
+            <h2>13. Contact Us</h2>
+            
+            <div class="contact-info">
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <p><strong>By email:</strong> privacy@hooksynest.com</p>
+                <p><strong>By mail:</strong> HooksyNest LLC, 123 Crafters Lane, Yarnville, CA 90210, United States</p>
+                <p><strong>By phone:</strong> (555) 123-4567 (Monday-Friday, 9am-5pm PST)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Yarn</a></li>
+                        <li><a href="#">Hooks & Needles</a></li>
+                        <li><a href="#">Kits</a></li>
+                        <li><a href="#">Patterns</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Beginner Guides</a></li>
+                        <li><a href="#">Stitch Dictionary</a></li>
+                        <li><a href="#">Skill Building</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Project Gallery</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Stitch-Alongs</a></li>
+                        <li><a href="#">Challenges</a></li>
+                        <li><a href="#">Meetups</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Designers</a></li>
+                        <li><a href="#">Teachers</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p>HooksyNest LLC</p>
+                        <p>123 Crafters Lane</p>
+                        <p>Yarnville, CA 90210</p>
+                        <p>United States</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Email: hello@hooksynest.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HooksyNest. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
